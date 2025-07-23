@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Buy Your Product</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+      background-image: url('https://img.freepik.com/premium-vector/background-with-colorful-shopping-bags-vector-illustration-sale-discount-concept_653240-59.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .navbar {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #1a1a1a;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    .navbar a {
+      background-color: #ffffff;
+      color: #1a1a1a;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    }
+
+    .navbar a:hover {
+      background-color: #4CAF50;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .brand-name {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .form-container {
+      background: #ffffff;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      margin-top: 100px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .form-container {
+    background: #ffffff;
+    padding: 20px 25px; /* Reduced padding */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 300px; /* Reduced width */
+    margin-top: 100px;
+}
+
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="2.html">← Back</a>
+    <span class="brand-name">🛍️ THE CART</span>
+    <a href="1.html">🏠 Home</a>
+  </div>
+
+  <div class="form-container">
+    <h2>Buy Your Product</h2>
+    <form action="6.html" method="get">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" required />
+
+      <label for="no">Phone No</label>
+      <input type="tel" id="no" name="phone" pattern="[0-9]{10}" required />
+
+      <label for="pay">Paying Method</label>
+      <select id="pay" name="payment_method" required>
+        <option value="">-- Select Payment Method --</option>
+        <option value="credit">Credit Card</option>
+        <option value="debit">Debit Card</option>
+        <option value="upi">UPI</option>
+        <option value="cod">Cash on Delivery</option>
+      </select>
+
+      <button type="submit">Pay</button>
+    </form>
+  </div>
+</body>
+</html>

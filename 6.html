@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Thank You</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #d3cce3, #e9e4f0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            background-image: url('https://img.freepik.com/premium-vector/background-with-colorful-shopping-bags-vector-illustration-sale-discount-concept_653240-59.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #1a1a1a;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar a {
+            background-color: #ffffff;
+            color: #1a1a1a;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #4CAF50;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .brand-name {
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .message-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            margin-top: 100px; /* space below navbar */
+        }
+
+        h1 {
+            color: #4CAF50;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top navbar with back and home -->
+    <div class="navbar">
+        <a href="5.html">← Back</a>
+        <span class="brand-name">🛍️ THE CART</span>
+        <a href="1.html">🏠 Home</a>
+    </div>
+
+    <!-- Success Message Box -->
+    <div class="message-box">
+        <h1>Success!</h1>
+        <p>Your shopping was successfully completed.</p>
+        <a href="2.html" class="btn">Continue Shopping</a>
+    </div>
+</body>
+</html>

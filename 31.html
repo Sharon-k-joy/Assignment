@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dress - The Cart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      
+      background-color: rgb(10, 189, 202);
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-image: url('https://img.freepik.com/premium-vector/background-with-colorful-shopping-bags-vector-illustration-sale-discount-concept_653240-59.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .navbar {
+      background-color: #1a1a1a;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      background-color: #ffffff;
+      color: #1a1a1a;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .navbar a:hover {
+      background-color: #4CAF50;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    
+    .item {
+  display: inline-block;
+  margin: 20px;
+  width: 250px; 
+  vertical-align: top;
+  text-align: center; 
+}
+
+    .item img {
+      width: 220px;
+      height: 160px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .item img:hover {
+      transform: scale(1.05);
+    }
+
+    h3 {
+      margin-top: 10px;
+      font-size: 22px;
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar for Back and Home -->
+  <div class="navbar">
+    <a href="2.html">← Back</a>
+    <span style="color: white; font-weight: bold; font-size: 20px;">🛒 Dress Collection</span>
+    <a href="1.html">🏠 Home</a>
+  </div>
+
+  <!-- Dress Categories -->
+  <div class="container">
+    <div class="item">
+      <a href="411.html">
+        <img src="https://blogs-images.forbes.com/bishopjordan/files/2017/01/siwilai.jpg" alt="Men's Clothing">
+      </a>
+      <h3>Men</h3>
+      <p>For mens collection</p>
+    </div>
+
+    <div class="item">
+      <a href="412.html">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBYqaTYRsKdeC8_JnflD8TyD4bSsaNahmksA&s" alt="Children's Clothing">
+      </a>
+      <h3>Child</h3>
+      <p>For child collection</p>
+    </div>
+
+    <div class="item">
+      <a href="413.html">
+        <img src="https://content.jdmagicbox.com/comp/def_content/women-boutiques/shutterstock-589577570-women-boutiques-8-bt56s.jpg" alt="Women's Clothing">
+      </a>
+      <h3>Women</h3>
+      <p>For womens collection</p>
+    </div>
+  </div>
+
+</body>
+</html>
