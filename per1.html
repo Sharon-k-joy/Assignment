@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Details</title>
+    <style>
+         body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-image: url('https://thumbs.dreamstime.com/b/hospital-building-blue-sky-timelapse-hospital-building-blue-sky-timelapse-animation-203868070.jpg'); /* Replace with your own image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            width: 400px;
+            margin: 100px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #03bbe9;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .submit-btn {
+            margin-top: 30px;
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            background-color: #00c5e7;
+            border: none;
+            border-radius: 8px;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #00d4ca;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>PERSONAL DETAILS</h1>
+        <form action="pay1.html">
+            <label for="username">NAME:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="address">ADDRESS:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="mobile">MOBILE:</label>
+            <input type="text" id="mobile" name="mobile" required>
+
+            <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+    </div>
+
+</body>
+</html>

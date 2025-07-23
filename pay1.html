@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment</title>
+    <style>
+         body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-image: url('https://thumbs.dreamstime.com/b/hospital-building-blue-sky-timelapse-hospital-building-blue-sky-timelapse-animation-203868070.jpg'); /* Replace with your own image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.65);
+            width: 400px;
+            margin: 100px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #00ffd9;
+        }
+
+        p {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .options label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"] {
+            transform: scale(1.2);
+            accent-color: #00ffd9;
+        }
+
+        .pay-btn {
+            margin-top: 25px;
+            width: 100%;
+            padding: 12px;
+            background-color: #00ffd9;
+            color: #000;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .pay-btn:hover {
+            background-color: #00ccb0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>PAYMENT METHOD</h1>
+        <p>SELECT PAYMENT METHOD</p>
+
+        <label for="paymentmethod">PAYMENT METHOD</label>
+        <div class="options">
+            <label><input type="checkbox" name="payment" value="UPI">UPI</label>
+            <label><input type="checkbox" name="payment" value="Cash">By Cash</label>
+            <label><input type="checkbox" name="payment" value="Card">Card</label>
+        </div>
+
+        <a href="dow1.html">
+            <button type="button" class="pay-btn">PAY</button>
+        </a>
+    </div>
+
+</body>
+</html>

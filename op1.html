@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OP Booking - HOLLY CROSS</title>
+  <style>
+    body {
+      
+        
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://thumbs.dreamstime.com/b/hospital-building-blue-sky-timelapse-hospital-building-blue-sky-timelapse-animation-203868070.jpg'); /* Default background image */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 36px;
+      color: #ffcccb;
+    }
+
+    form {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      margin: 40px auto;
+      border-radius: 12px;
+      max-width: 500px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    label, select {
+      font-size: 18px;
+      margin: 10px 0;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+
+    select {
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 30px;
+      font-size: 18px;
+      color: white;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .bg-picker {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background-color: #ffffffcc;
+      color: black;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .bg-picker input {
+      margin-left: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bg-picker">
+    Change Background:
+    <input type="file" accept="image/*" onchange="changeBackground(event)">
+  </div>
+
+  <h1>FOR OP BOOKING</h1>
+
+  <form action="per1.html" method="get">
+    <label for="department">SELECT THE DEPARTMENT:</label>
+    <select id="department" name="department" required>
+      <option value="">--Choose Department--</option>
+      <option value="pediatry">PEDIATRY</option>
+      <option value="ortho">ORTHOLOGY</option>
+      <option value="cardio">CARDIOLOGY</option>
+      <option value="optho">OPTHOLOGY</option>
+      <option value="dermo">DERMATOLOGY</option>
+    </select>
+
+    <label for="timeslot">SELECT THE TIME SLOT:</label>
+    <select id="timeslot" name="timeslot" required>
+      <option value="">--Choose Time Slot--</option>
+      <option value="first">6 AM - 12 PM</option>
+      <option value="second">12 PM - 6 PM</option>
+      <option value="third">6 PM - 12 AM</option>
+      <option value="fourth">12 AM - 6 AM</option>
+    </select>
+
+    <button type="submit">SUBMIT</button>
+  </form>
+
+  <script>
+    // JavaScript to change background image dynamically
+    function changeBackground(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          document.body.style.backgroundImage = `url('${e.target.result}')`;
+        };
+        reader.readAsDataURL(file);
+      }
+    }
+  </script>
+
+</body>
+</html>
